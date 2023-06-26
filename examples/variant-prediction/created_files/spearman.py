@@ -2,7 +2,7 @@ import pandas as pd
 
 from scipy.stats import spearmanr
 
-df = pd.read_csv("output.csv")
+df = pd.read_csv("Ranganathan2015wt_output.csv")
 df["esm1v_t33_650M_UR90S_ALL"] = (df["esm1v_t33_650M_UR90S_1"] + df["esm1v_t33_650M_UR90S_2"] + df["esm1v_t33_650M_UR90S_3"] + df["esm1v_t33_650M_UR90S_4"] + df["esm1v_t33_650M_UR90S_5"]) / 5
 
 df1 = df[["2500_1"]]
